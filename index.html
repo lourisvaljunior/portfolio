@@ -1,22 +1,56 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="ept-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novas Tags</title>
-    <link rel="stylesheet" href="novas_tags.css">
+    <title>Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            font: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #777;
+            height: 100%;
+        }
+        .box1, .box2, .box3 {
+            height: 100%;
+            opacity: 0.5;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .box1 {
+            background-image: url(https://cdn.pixabay.com/photo/2016/04/07/06/53/bmw-1313343_1280.jpg);
+        }
+        .box2 {
+            background-image: url(https://cdn.pixabay.com/photo/2014/07/31/23/37/motorbike-407186_960_720.jpg);
+            /* background-color: aliceblue;
+            animation-name: animacao;
+            animation-duration: 5s;
+            display: flex; */
+        }
+        .box3 {
+            background-image: url(https://cdn.pixabay.com/photo/2018/08/29/03/57/man-3639100_960_720.jpg);
+        }
+        @keyframes animacao {
+            from {
+                background-color: red;
+                align-items: flex-end;
+            }
+            to {
+                background-color: blue;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="container">
-        <header>HEADER</header>
-        <nav>NAV</nav>
-        <main>MAIN
-            <section>SECTION</section>
-            <section>SECTION</section>
-        </main>
-        <aside>ASIDE</aside>
-        <footer>FOOTER</footer>
+    <div class="box1">
+        <div>Conteúdo 1</div>
     </div>
+    <div class="box2">Conteúdo 2</div>
+    <div class="box3">Conteúdo 3</div>
 </body>
 </html>
