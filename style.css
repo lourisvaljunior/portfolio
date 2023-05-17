@@ -1,0 +1,34 @@
+body, html {
+    margin: 0;
+    font: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #777;
+    height: 100%;
+}
+.box1, .box2, .box3 {
+    height: 100%;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.box1 {
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/07/06/53/bmw-1313343_1280.jpg);
+}
+.box2 {
+    background-image: url(https://cdn.pixabay.com/photo/2014/07/31/23/37/motorbike-407186_960_720.jpg);
+}
+.box3 {
+    background-image: url(https://cdn.pixabay.com/photo/2018/08/29/03/57/man-3639100_960_720.jpg);
+}
+@keyframes animacao {
+    from {
+        background-color: red;
+        align-items: flex-end;
+    }
+    to {
+        background-color: blue;
+        align-items: flex-start;
+    }
+}
